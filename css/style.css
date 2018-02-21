@@ -1,0 +1,148 @@
+/* Jag har delat in min css-fil på samma sätt som html-filen 						*/
+/* Först kommer globala inställningar, sen toppen som arbetar sig ner till foten 	*/
+
+/* Global */
+
+body{
+	font: 15px/1.5 Arial, Helvetica,sans-serif; /* Sätter den generella textstilen */
+	padding:0;
+	margin:0;
+}
+.highlight, .current a{	/* Två olika funktioner som ska ge samma typ av formatering */
+	color:#cccccc;
+	font-weight:bold;
+}
+.container{				/* Den vanligaste funktionen som är först i varje sid-del 		*/
+	width:80%;			/* Beskriver den generella layouten, dölj element snarare än scroll osv. */
+	margin:auto;
+	overflow:hidden;
+}
+
+/* Header */
+
+header{						/* Sätter färger och avgränsningar för toppen blocket av hemsidan */
+	background:#f22c00;
+	color:#ffffff;
+	padding-top:30px;
+	min-height:70px;
+	font-weight:bold;
+}
+
+header a{					/* Beskriver List-elementen av toppen */
+	color:#ffffff;
+	text-decoration:none;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+header ul{
+	margin:0;
+	padding:0;
+}
+
+header li{
+	float:left;
+	display:inline;
+	padding: 0 20px 0 20px; /* top right bottom left */
+}
+
+header #branding{			/* Beskriver element med ID 'branding' */
+	float:left;				/* Dvs. loggan på hemsidan			   */
+}
+
+header #branding h1{
+	margin:0
+}
+
+header #branding p{
+	margin:0
+}
+
+header nav{
+	float:right;
+	margin-top:10px;
+}
+
+header a:hover{
+	color:#cccccc;
+	font-weight:bold;
+}
+
+/* showcase */
+
+#showcase{
+	min-height:400px;		/* min-height setter en minstagräns som elementet kan krympa till, men ingen övre gräns */
+
+	background:url("../img/bigpizza.jpg") no-repeat;	/* Laddar in en bild som bakgrund, no-repeat gör att bilden ej loopas */
+	text-align:center;
+	color:#ffffff;
+	text-shadow: 2px 2px #000000;		/* Skuggar texten så den lättare ska läsar över en bild */
+}
+
+#showcase h2{				/* Sätter rubrikens variabler */
+	margin-top:60px;
+	font-size:42px;
+	margin-bottom:10px;
+}
+
+/* about */
+
+#about{					/* Avgränsning, textfärg och bakgrundsfärg */
+	padding:15px;
+	color:#ffffff;
+	background:#3f51b5;
+}
+
+/* explain  */
+
+#explain{
+	margin-top:20px;
+	font-size:14px;
+	font-weight:bold;
+}
+
+#explain .step{		/* Klassen ska bete sig på ett visst sätt */
+	float:left;
+	text-align: center;
+	width: 30%;
+	padding:10px;
+}
+
+#explain .step img{		/* Sätter en bestämd storlek på bilderna */
+	width:90px;
+	height:90px;
+}
+
+/* footer */
+
+footer{
+	padding:20px;
+	margin-top:20px;
+	font-size:20px;
+	color:#ffffff;
+	background-color:#f22c00;
+}
+footer p{
+	float:right;
+}
+
+footer a{
+	color:#ffffff;
+	text-decoration:none;
+	font-size: 16px;
+}
+
+footer ul{
+	margin:0;
+	padding:0;
+}
+
+footer li{
+	float:left;
+	display:inline;
+	padding: 0 20px 0 20px; /* top right bottom left */
+}
+
+footer #adress{
+	color:#234535;
+}
