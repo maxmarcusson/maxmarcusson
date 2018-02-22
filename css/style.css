@@ -113,6 +113,10 @@ header a:hover{
 	height:90px;
 }
 
+#explain .MSE {		/* Ska icke synas (tas bort senare om MS Edge används) */
+	display: none;
+}
+
 /* footer */
 
 footer{
@@ -145,4 +149,37 @@ footer li{
 
 footer #adress{
 	color:#234535;
+}
+
+ @media(max-width: 768px) { /* Ändrar stilen om webbfönstret är under 768px bred 	*/
+	.container{				/* Gör den mer anpassad för mobiler 					*/
+		width: auto;
+	 }
+	 header #branding,
+	 header nav,
+	 header nav li,
+	 footer p,
+	 foot li{
+		 float:none;
+		 text-align: center;
+		 width: auto;
+	 }
+	 #explain .step {
+		 float:none;
+		 text-align: center;
+		 width:auto;
+	 }
+ }
+
+	@supports(-ms-ime-align:auto){ 	/* Visar en Extrabild om användar har MS Edge 	*/
+    #explain .MSE{ 					/* För att klara kravet om 4 bilder 			*/
+	display: unset;
+	float:left;
+	text-align: center;
+	width: 30%;
+	padding:10px;
+	}
+	#explain .MSE img{	
+	width:90px;
+	height:90px;
 }
