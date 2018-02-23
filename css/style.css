@@ -151,6 +151,27 @@ footer #adress{
 	color:#234535;
 }
 
+ /*@supports(-ms-ime-align:auto){ 	 Visar en Extrabild om användar har MS Edge 	*/
+    #explain .MSE{ 					/* För att klara kravet om 4 bilder 			*/
+		display: unset;
+		float:left;
+		text-align: center;
+		width: 22%;
+		padding:10px;
+	}
+	#explain .MSE img{	
+		width:90px;
+		height:90px;
+	}
+	#explain .step{		/* Klassen ska bete sig på ett visst sätt */
+	float:left;
+	text-align: center;
+	width: 22%;
+	padding:10px;
+	}
+/*} bortkommenterat för att få in fler bilder */
+
+ 
  @media(max-width: 768px) { /* Ändrar stilen om webbfönstret är under 768px bred 	*/
 	.container{				/* Gör den mer anpassad för mobiler 					*/
 		width: auto;
@@ -164,22 +185,10 @@ footer #adress{
 		 text-align: center;
 		 width: auto;
 	 }
-	 #explain .step {
+	 #explain .step,
+	 #explain .MSE {
 		 float:none;
 		 text-align: center;
 		 width:auto;
 	 }
  }
-
-	@supports(-ms-ime-align:auto){ 	/* Visar en Extrabild om användar har MS Edge 	*/
-    #explain .MSE{ 					/* För att klara kravet om 4 bilder 			*/
-	display: unset;
-	float:left;
-	text-align: center;
-	width: 30%;
-	padding:10px;
-	}
-	#explain .MSE img{	
-	width:90px;
-	height:90px;
-}
